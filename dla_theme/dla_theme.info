@@ -1,0 +1,11 @@
+
+name = DLA Theme
+description = DLA Theme
+base theme = dla_core
+core = 6.x
+engine = phptemplate
+
+scripts[] = js/dla_theme_script.js
+
+stylesheets[all][] = css/dla-theme-style.css
+

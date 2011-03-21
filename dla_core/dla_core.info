@@ -1,0 +1,37 @@
+
+name = DLA Core
+description = Core Theming for WHOI Data Library and Archives
+core = 6.x
+engine = phptemplate
+
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/typography.css
+stylesheets[all][] = css/superfish.css
+stylesheets[all][] = css/superfish-navbar.css
+stylesheets[all][] = css/superfish-vertical.css
+
+scripts[] = js/jquery.bgiframe.min.js
+scripts[] = js/hoverIntent.js
+scripts[] = js/supposition.js
+scripts[] = js/supersubs.js
+scripts[] = js/superfish.js
+scripts[] = js/script.js
+
+regions[left] = left
+regions[right] = right
+regions[header] = header
+regions[content] = content
+regions[footer] = footer
+
+; Default theme settings
+settings[theme_grid] = grid16-960
+settings[theme_grid_options][] = grid16-960
+settings[theme_grid_options][] = grid16-fluid
+settings[theme_grid_options][] = grid12-960
+settings[theme_grid_options][] = grid12-fluid
+settings[fluid_grid_width] = fluid-100
+settings[theme_font_size] = font-size-13
+settings[sidebar_layout] = sidebars-split
+settings[left_width] = 3
+settings[right_width] = 3
+

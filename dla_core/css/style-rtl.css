@@ -1,0 +1,226 @@
+/* $Id: style-rtl.css,v 1.1.2.4 2010/04/08 07:02:59 sociotech Exp $ */
+
+body {
+  direction: rtl;
+}
+
+ul, ol, dd {
+  margin-left: 0;
+  margin-right: 2em;
+}
+
+.nested {
+  float: right;
+}
+
+/* sidebar layouts */
+.sidebars-both-first .content-group {
+  float: left;
+}
+
+.sidebars-both-last .left {
+  float: left;
+}
+
+#site-name-wrapper {
+  float: right;
+}
+
+.block ul,
+.block ol {
+  margin-left: 0;
+  margin-right: 2em;
+}
+
+.block ul.links {
+  margin-right: 0;
+}
+
+/* remove left margin from primary menu list */
+#primary-menu.block ul {
+  margin-right: 0;
+}
+
+/* float right */
+.primary-menu ul li {
+  float: right;
+}
+
+.secondary-menu-inner ul.links {
+  margin-right: 0;
+}
+
+
+/* Skinr styles - swap directions in RTL so bidi sites are consistent
+/------------------------------------------------------------------- */
+
+/* Skinr selectable helper classes */
+div.dla-core-right {
+  float: left;
+}
+
+.dla-core-right-content .inner {
+  text-align: left;
+}
+
+.dla-core-right-content #user-login-form {
+  text-align: left;
+}
+
+/* Single line menu with separators */
+.dla-core-inline-menu .inner ul.menu {
+  margin-right: 0;
+}
+
+.dla-core-inline-menu .inner ul.menu li a {
+  padding: 0 5px 0 8px;
+}
+
+/* Multi-column menu style with bolded top level menu items */
+.dla-core-multicol-menu .inner ul {
+  margin-right: 0;
+  text-align: right;
+}
+
+.dla-core-multicol-menu .inner ul li.last a {
+  padding-left: 0;
+}
+
+.dla-core-multicol-menu .inner ul li.expanded,
+.dla-core-multicol-menu .inner ul li.leaf {
+  float: right;
+  margin-left: 0;
+  margin-right: 50px;
+}
+
+.dla-core-multicol-menu .inner ul li.expanded li.leaf {
+  margin-right: 0;
+}
+
+.dla-core-multicol-menu .inner ul.menu li.first {
+  margin-right: 0;
+}
+
+.dla-core-multicol-menu .inner ul li.expanded ul {
+  margin-right: 0;
+}
+
+.dla-core-multicol-menu .inner ul li.expanded ul li {
+  margin-right: 0;
+  text-align: right;
+}
+
+/* Split list across multiple columns */
+.dla-core-2-col-list .inner .item-list ul li,
+.dla-core-2-col-list .inner ul.menu li {
+  float: right;
+}
+
+.dla-core-3-col-list .inner .item-list ul li,
+.dla-core-3-col-list .inner ul.menu li {
+  float: right;
+}
+
+.dla-core-list-bottom-border .inner ul li,
+.dla-core-list-bottom-border .view-content div.views-row {
+  padding: 0 10px 0 0;
+}
+
+.dla-core-list-vertical-spacing .inner ul li ul {
+  margin-right: 10px;
+}
+
+/* Float imagefield images and add margin */
+.dla-core-float-imagefield-right .field-type-filefield,
+.dla-core-float-imagefield-right .image-insert,
+.dla-core-float-imagefield-right .imagecache {
+  float: left;
+  margin: 0 15px 15px 0;
+}
+
+/* Clear float on new Views item so each row drops to a new line */
+.dla-core-float-imagefield-right .views-row {
+  clear: left;
+}
+
+.dla-core-float-imagefield-left .field-type-filefield,
+.dla-core-float-imagefield-left .image-insert
+.dla-core-float-imagefield-left .imagecache {
+  float: right;
+  margin: 0 0 15px 15px;
+}
+
+.dla-core-float-imagefield-left .views-row {
+  clear: right;
+}
+
+.block {
+  float: right;
+}
+
+.block .dla-core-edit {
+  left: 0;
+  right: auto;
+  text-align: right;
+}
+
+.profile dt {
+  float: right;
+  margin-left: 5px;
+  text-align: right;
+}
+
+.forum-topic-navigation .topic-previous {
+  text-align: left;
+  float: right;
+}
+
+.forum-topic-navigation .topic-next {
+  text-align: right;
+  float: left;
+}
+
+/* User Login Form
+/-------------------------------------------------------------- */
+#user-login-form {
+  text-align: right;
+}
+
+#user-login-form .item-list ul {
+  margin-right: 0;
+}
+
+/* Horizontal login form (Skinr selectable) */
+.dla-core-horiz-login#block-user-0 {
+  float: left;
+}
+
+.dla-core-horiz-login#block-user-0 #user-login-form div.form-item,
+.dla-core-horiz-login#block-user-0 #user-login-form input.form-submit,
+.dla-core-horiz-login#block-user-0 .item-list {
+  float: right;
+  margin: 0 0 0 10px;
+  text-align: right;
+}
+
+.dla-core-horiz-login#block-user-0 #user-login-form label {
+  margin: -20px 2px 0 0;
+}
+
+html.js .dla-core-horiz-login#block-user-0 #user-login-form label {
+  margin: 0 7px 0 0;
+}
+
+/* OpenID login*/
+.dla-core-horiz-login#block-user-0 #user-login-form div#edit-openid-identifier-wrapper {
+  margin: 0 0 0 10px;
+}
+
+html.js .dla-core-horiz-login#block-user-0 #user-login-form div#edit-openid-identifier-wrapper label {
+  padding-right: 18px;
+}
+
+.dla-core-horiz-login#block-user-0 #edit-openid-identifier-wrapper .description {
+  padding-left: 5px;
+  text-align: left;
+}
