@@ -226,7 +226,8 @@
 }
 
 /* Breadcrumb */
-.breadcrumb{
+#breadcrumb{
+    margin-bottom: .5em;
 }
 
 .breadcrumb a{
