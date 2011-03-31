@@ -65,6 +65,7 @@
 <ul class="dla-about-menu">
 <li><a href="/dla/mission">Mission</a></li>
 <li><a href="/dla/location-and-hours">Location and Hours</a></li>
+<li><a href="/dla/policies">Policies</a></li>
 <li><a href="/dla/staff">Staff</a></li>
 <li><a href="/dla/volunteers">Volunteers and Volunteering</a></li>
 <li><a href="/dla/contact">Contact the DLA</a></li>
