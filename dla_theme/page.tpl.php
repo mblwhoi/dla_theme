@@ -102,7 +102,7 @@
 
 <ul class="dla-whoi-publications-menu">
 <li><a href="/dla/whoi-publications/whoi-bibliography" title="Bibliography of scientific publications of the WHOI community, 1930 - present">WHOI Bibliography</a></li>
-<li><a href="/ndsf_bibliography/" title="Bibliography of publications related to the National Deep Submergence Facility">NDSF Bibliography</a></li>
+<li><a href="/dla/ndsf-bibliography/" title="Bibliography of publications related to the National Deep Submergence Facility">NDSF Bibliography</a></li>
 <li><a href="/dla/whoi-publications/whoi-technical-reports" title="WHOI Technical Reports">WHOI Technical Reports</a></li>
 <li><a href="/dla/whoi-publications/mit-whoi-theses" title="MIT/WHOI Joint Program">MIT/WHOI Joint Program Theses</a></li>
 <li><a href="/dla/whoi-publications/other-resources" title="Other WHOI Publication Resources">Other WHOI Publication Resources</a></li>
