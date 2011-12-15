@@ -87,104 +87,84 @@
 }
 
 /* DLA Nav Menu */
-#dla-nav-menu{
+#dla-nav-menu {
+    padding: 0;
+    margin: 0;
+}
+
+#dla-nav-menu li{
+    list-style-image: none;
+    list-style-type: none;
+}
+
+#dla-nav-menu > ul{
     margin-bottom: 0;
 }
 
-#dla-nav-menu a{
+#dla-nav-menu > ul a{
     text-decoration: none;
 }
 
-#dla-nav-menu a:hover{
+#dla-nav-menu > ul a:hover{
     text-decoration: underline;
 }
 
-#dla-nav-menu > li{
-    font-size: 12pt;
+#dla-nav-menu > ul > li{
+    float: left;
+    margin: 0px;
+    padding-left: 0px;
 }
 
 
-#dla-nav-menu > li > a{
-    text-indent: -99999px;
-    background-image: url('resources/dla_menu.png');
-    height: 40px;
-    display: block;
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0;
+#dla-nav-menu > ul > li > a{
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 2.25em 0 0;
+    line-height: 40px;
 }
 
-
-#dla-nav-menu > li.about > a{
-    width: 101px;
-}
-#dla-nav-menu > li.about > a:hover{
-    background-position: 0 -40px;
-}
-
-#dla-nav-menu > li.data > a{
-    width: 89px;
-    background-position: -101px 0px;
-}
-#dla-nav-menu > li.data > a:hover{
-    background-position: -101px -40px;
-}
-
-#dla-nav-menu > li.archives > a{
-    width: 135px;
-    background-position: -190px 0px;
-}
-#dla-nav-menu > li.archives > a:hover{
-    background-position: -190px -40px;
-}
-
-#dla-nav-menu > li.whoi-publications > a{
-    width: 169px;
-    background-position: -325px 0px;
-}
-#dla-nav-menu > li.whoi-publications > a:hover{
-    background-position: -325px -40px;
-}
-
-#dla-nav-menu > li.reference > a{
-    width: 151px;
-    background-position: -494px 0px;
-}
-#dla-nav-menu > li.reference > a:hover{
-    background-position: -494px -40px;
-}
-
-#dla-nav-menu > li.contact > a{
-    width: 110px;
-    background-position: -645px 0px;
-}
-#dla-nav-menu > li.contact > a:hover{
-    background-position: -645px -40px;
-}
-
-
-
-
-#dla-nav-menu > li > a:hover, #dla-nav-menu > li.sfHover > a{
+#dla-nav-menu > ul > li > a:hover, #dla-nav-menu > ul > li.sfHover > a{
     color: yellow;
 }
 
-#dla-nav-menu > li:hover > ul{
+#dla-nav-menu > ul > li > ul{
+    position: absolute;
     left: inherit;
-    margin-left: inherit;
     top: inherit;
+    min-width: 200px;
+    margin-left: -10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: white;
-    border-right: 1px solid #D0D0D0;
-    border-bottom: 1px solid #D0D0D0;
-    border-left: 1px solid #D0D0D0;
-    width: 180px;
+    border-right: 4px solid #0D3360;
+    border-bottom: 4px solid #0D3360;
+    border-left: 4px solid #0D3360;
+    z-index: 999;
 }
 
-#dla-nav-menu > li:hover > ul > li > a{
-    padding-left: 10px;
-    color: #295993;
+
+#dla-nav-menu > ul > li > ul > li {
+    margin-right: -10px;
+    padding-right: 10px;
 }
+
+#dla-nav-menu > ul > li > ul > li > a{
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#dla-nav-menu > ul > li > ul > li > a:hover{
+    color: white;
+    background-color: #173C82;
+}
+
 
 /* First Sidebar*/
 

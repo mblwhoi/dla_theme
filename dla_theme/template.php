@@ -15,6 +15,35 @@ function dla_theme_preprocess_page(&$vars) {
       $vars['banner'] = theme_get_setting('dla_theme_banner_path');
 
   }
+
+  // Set DLA menu html.
+  $vars['dla_menu'] = _dla_theme_get_dla_menu();
+}
+
+
+/**
+ * Helper function to get DLA menu from main DLA site or local cache.
+ */
+function _dla_theme_get_dla_menu($reset = FALSE){
+  static $dla_menu;
+  if (! isset($dla_menu) || $reset){
+    // Retrieve DLA menu from cache...
+    if (! $reset && ($cache = cache_get('dla_theme_dla_menu')) && ! empty($cache->data) ){
+      $dla_menu = $cache->data;
+    }
+    // ... or get DLA menu from main dla site and cache.
+    else{
+      global $base_url;
+      preg_match('@^(http://[^/]+)@i',$base_url, $matches);
+      $hostname = $matches[0];
+      $menu_url =  $hostname . '/dla/dla_menu';
+      $dla_menu = file_get_contents($menu_url);
+
+      // Cache for 15 minutes.
+      cache_set('dla_theme_dla_menu', $dla_menu, 'cache', time() + 10);
+    }
+  }
+  return $dla_menu;
 }
 
 
@@ -31,7 +60,7 @@ function dla_theme_breadcrumb($breadcrumb){
     // Get sitename.
     $sitename = variable_get('site_name', 'drupal');
 
-    // Prepend MBLWHOI Library, DLA, and site name tle to breadcrumbs.
+    // Prepend MBLWHOI Library, DLA, and site name to breadcrumbs.
     array_unshift($breadcrumb, 
                   l('MBLWHOI Library', 'http://www.mblwhoilibrary.org'),
                   l('WHOI DLA', '/dla', array('external' => TRUE)),
