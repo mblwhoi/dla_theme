@@ -1,5 +1,5 @@
 Drupal.behaviors.dla_themeSuperfish = function (context) {
-    $("#dla-nav-menu > ul").superfish({
+    $("#dla-nav-menu").superfish({
             hoverClass:  'sfHover',
             delay:       0,
             animation:   {opacity:'none',height:'none'},

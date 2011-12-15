@@ -87,9 +87,9 @@
 }
 
 /* DLA Nav Menu */
-#dla-nav-menu {
-    padding: 0;
+#dla-nav-menu{
     margin: 0;
+    padding: 0px 0px 0px 10px;
 }
 
 #dla-nav-menu li{
@@ -97,43 +97,40 @@
     list-style-type: none;
 }
 
-#dla-nav-menu > ul{
-    margin-bottom: 0;
-}
-
-#dla-nav-menu > ul a{
+#dla-nav-menu a{
     text-decoration: none;
 }
 
-#dla-nav-menu > ul a:hover{
+#dla-nav-menu a:hover{
     text-decoration: underline;
 }
 
-#dla-nav-menu > ul > li{
+#dla-nav-menu > li{
     float: left;
     margin: 0px;
     padding-left: 0px;
 }
 
 
-#dla-nav-menu > ul > li > a{
+#dla-nav-menu > li > a{
     color: #ffffff;
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
     padding: 0 2.25em 0 0;
     line-height: 40px;
 }
 
-#dla-nav-menu > ul > li > a:hover, #dla-nav-menu > ul > li.sfHover > a{
+#dla-nav-menu > li > a:hover, #dla-nav-menu > li.sfHover > a{
     color: yellow;
 }
 
-#dla-nav-menu > ul > li > ul{
+#dla-nav-menu > li > ul{
     position: absolute;
     left: inherit;
     top: inherit;
     min-width: 200px;
+    max-width: 300px;
     margin-left: -10px;
     padding-right: 10px;
     padding-top: 10px;
@@ -146,12 +143,12 @@
 }
 
 
-#dla-nav-menu > ul > li > ul > li {
+#dla-nav-menu > li > ul > li {
     margin-right: -10px;
     padding-right: 10px;
 }
 
-#dla-nav-menu > ul > li > ul > li > a{
+#dla-nav-menu > li > ul > li > a{
     display: block;
     width: 100%;
     font-size: 16px;
@@ -160,7 +157,7 @@
     padding-bottom: 5px;
 }
 
-#dla-nav-menu > ul > li > ul > li > a:hover{
+#dla-nav-menu > li > ul > li > a:hover{
     color: white;
     background-color: #173C82;
 }
