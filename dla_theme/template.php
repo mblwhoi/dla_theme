@@ -37,10 +37,14 @@ function _dla_theme_get_dla_menu($reset = FALSE){
       preg_match('@^(http://[^/]+)@i',$base_url, $matches);
       $hostname = $matches[0];
       $menu_url =  $hostname . '/dla/dla_menu';
-      $dla_menu = file_get_contents($menu_url);
 
-      // Cache for 15 minutes.
-      cache_set('dla_theme_dla_menu', $dla_menu, 'cache', time() + 10);
+      $context = stream_context_create(array('http' => array('timeout' => 3)));
+      $dla_menu = file_get_contents($menu_url, 0, $context);
+
+      if ($dla_menu){
+        // Cache for 15 minutes.
+        cache_set('dla_theme_dla_menu', $dla_menu, 'cache', time() + 10);
+      }
     }
   }
   return $dla_menu;
